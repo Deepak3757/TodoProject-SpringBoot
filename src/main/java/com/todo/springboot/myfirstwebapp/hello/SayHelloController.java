@@ -11,6 +11,14 @@ public class SayHelloController {
 	@RequestMapping("say-hello")
 	@ResponseBody
 	public String sayHello() {
-		return "Hello world! It's Deepak";
+		return """
+				
+				<html>
+					<head><title>The project</title></head>
+					<body style='background-color: black'>
+						<h1 style='color: red'>Hellooo World!</h2>
+					</body>
+				</html>
+				""";
 	}
 }
