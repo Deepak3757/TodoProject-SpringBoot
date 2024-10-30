@@ -31,6 +31,8 @@
 
 	<body>
 		<h3>Welcome here</h3>
-		<h2>Welcome ${name} to the login page</h2>	
+		<h2>Welcome ${name} to the login page</h2>
+		<h4>Want to see your TODOs list?</h4>
+		<a href="list-todos">Click me!</a>	
 	</body>
 </html>
