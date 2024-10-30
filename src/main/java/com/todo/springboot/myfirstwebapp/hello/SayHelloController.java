@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class SayHelloController {
+	
 	@RequestMapping("say-hello")
 	public String sayHello() {
 		return "sayHello";
