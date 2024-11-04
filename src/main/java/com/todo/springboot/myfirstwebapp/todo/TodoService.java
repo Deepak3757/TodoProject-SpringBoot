@@ -7,6 +7,8 @@ import java.util.function.Predicate;
 
 import org.springframework.stereotype.Service;
 
+import jakarta.validation.Valid;
+
 @Service
 public class TodoService {
 
@@ -42,5 +44,20 @@ public class TodoService {
 //		}
 //		if(toRemove!=null)
 //			todos.remove(toRemove);
+	}
+
+	public Todo getTodoById(int id) {
+		// TODO Auto-generated method stub
+		for(Todo todo: todos) {
+			if(todo.getId()==id)
+				return todo;
+		}
+		return null;
+	}
+
+	public void updateTodo(@Valid Todo todo) {
+		// TODO Auto-generated method stub
+		removeTodo(todo.getId());
+		todos.add(todo);
 	}
 }
