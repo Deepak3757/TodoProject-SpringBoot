@@ -33,7 +33,7 @@
 
 <script type="text/javascript">
 	$('#targetDate').datepicker({
-		format : 'dd-yyyy-mm',
+		format : 'yyyy-mm-dd',
 		startDate : '-3d'
 	});
 </script>
