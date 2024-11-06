@@ -2,7 +2,6 @@ package com.todo.springboot.myfirstwebapp.todo;
 
 import java.time.LocalDate;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -67,7 +66,7 @@ public class TodoController {
 			return "todo";
 		}
 		
-		String username=
+		String username=(String)model.getAttribute("name");
 		todo.setUsername(username);
 		todoService.updateTodo(todo);
 		
